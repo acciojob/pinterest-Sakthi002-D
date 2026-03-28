@@ -1,18 +1,45 @@
+/* Main container */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f5f5f5;
 }
 
+/* Image styling */
 .hero img {
-  width: 400px;
+  width: 500px;
   height: 300px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.hero a {
+/* Content (text + button) */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+/* Title */
+.content h1 {
+  font-size: 28px;
+}
+
+/* Paragraph */
+.content p {
+  color: gray;
+}
+
+/* Button (Explore now link) */
+.content a {
   padding: 10px 20px;
   background-color: red;
   color: white;
   border-radius: 5px;
+  text-decoration: none;
+  width: fit-content;
 }
